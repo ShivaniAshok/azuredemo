@@ -1,0 +1,20 @@
+import './App.css';
+import { useState } from 'react';
+
+function App() {
+  const [number, setNumber] = useState(0);
+
+  return (
+    <div className='App'>
+      <p>counter: {number}</p>
+      <button name='increment' onClick={() => setNumber(number + 1)}>
+        Increment
+      </button>
+      <button name='decrement' onClick={() => setNumber(number - 1)}>
+        Decrement
+      </button>
+    </div>
+  );
+}
+
+export default App;
